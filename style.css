@@ -14,8 +14,15 @@ nav {
   width: 30%;
   margin: 0 auto;
 }
+.card {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    margin: 20px 0;
+}
 
-.heart-icon {
+.icon{
   width: 30px;
   height: 30px;
 }
@@ -41,10 +48,7 @@ main {
   margin: 20px auto;
 }
 .info {
-  background-color: white;
-  border-radius: 30px;
-  padding: 20px;
-  border: 1px solid lightgray;
+
   .location {
     display: flex;
     justify-content: space-between;
@@ -74,11 +78,6 @@ main {
   }
 }
 .kids-section {
-  background-color: white;
-  border-radius: 30px;
-  padding: 20px;
-  margin: 20px 0px;
-  border: 1px solid lightgray;
   div {
     display: flex;
     align-items: center;
@@ -89,10 +88,6 @@ main {
   .kids-nav {
     display: flex;
     justify-content: space-between;
-    .kids-icon {
-      width: 20px;
-      height: 20px;
-    }
     .kids-nav-title {
       display: flex;
       gap: 10px;
@@ -136,13 +131,7 @@ main {
     text-align: center;
     font-weight: lighter;
   }
-  .outfit {
-    background-color: white;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 20px 0px;
-    border: 1px solid lightgray;
-  }
+
   .outfit-nav {
     display: flex;
     gap: 10px;
@@ -162,10 +151,7 @@ main {
       gap: 4px;
       margin: 9px;
       .must-have-item {
-        border-radius: 3px;
         border: 1px solid rgb(144, 22, 22);
-        padding: 3px;
-        font-size: x-small;
         background-color: rgb(253, 209, 217);
       }
     }
@@ -187,18 +173,11 @@ main {
   }
 }
 .forecast {
-  background-color: white;
-  border-radius: 30px;
-  padding: 20px;
-  margin: 20px 0px;
-  border: 1px solid lightgray;
+
   .forecast-nav {
     display: flex;
     align-items: center;
     gap: 10px;
-    .calender-icon {
-      height: 30px;
-    }
   }
   .day-weather {
     display: flex;
@@ -270,3 +249,9 @@ footer{
         width: 15px;
     }
 }
+.tag-item {
+     border-radius: 3px;
+      border: 1px solid;
+       padding: 3px;
+        font-size: x-small;
+     }
