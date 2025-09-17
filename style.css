@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+body {
+  background-color: azure;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.heart-icon {
+  width: 30px;
+  height: 30px;
+}
+.settings-icon {
+  width: 15px;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 8px lightgray;
+}
+main {
+  width: 30%;
+  margin: 20px auto;
+}
+.info {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  .location {
+    display: flex;
+    justify-content: space-between;
+  }
+  .weather-info {
+    display: flex;
+    gap: 30px;
+    margin: 15px;
+    justify-content: center;
+    h2 {
+      font-size: xx-large;
+      font-weight: lighter;
+      color: lightskyblue;
+    }
+    .weather-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+.other-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  img {
+    height: 30px;
+  }
+}
+.kids-section {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px 0px;
+  border: 1px solid lightgray;
+  div {
+    display: flex;
+    align-items: center;
+    h4 {
+      font-size: x-large;
+    }
+  }
+  .kids-nav {
+    display: flex;
+    justify-content: space-between;
+    .kids-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .kids-nav-title {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  .add-kid-btn {
+    padding: 7px;
+    border-radius: 30px;
+    background-color: white;
+    border: solid 1px lightgray;
+    font-size: 16px;
+  }
+  .kid-info {
+    display: flex;
+    background-color: rgba(163, 172, 177, 0.222);
+    margin: 7px;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    border: solid 2px lightgray;
+    .kid-icon {
+      height: 10px;
+    }
+    .kid-age {
+      border-radius: 10px;
+      border: 1px solid skyblue;
+      padding: 5px;
+      display: flex;
+      gap: 2px;
+      font-weight: 400;
+      color: blue;
+    }
+  }
+  .active{
+    background-color: rgba(210, 233, 247, 0.5);
+    border: solid 2px lightblue;
+  }
+}
+.outfit-section {
+  .about-kid {
+    text-align: center;
+    font-weight: lighter;
+  }
+  .outfit {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 20px 0px;
+    border: 1px solid lightgray;
+  }
+  .outfit-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    img {
+      height: 30px;
+    }
+  }
+  .outfit-info {
+    margin-top: 15px;
+    text-align: left;
+    .must-have {
+      color: rgb(143, 38, 38);
+    }
+    .must-have-items {
+      display: flex;
+      gap: 4px;
+      margin: 9px;
+      .must-have-item {
+        border-radius: 3px;
+        border: 1px solid rgb(144, 22, 22);
+        padding: 3px;
+        font-size: x-small;
+        background-color: rgb(253, 209, 217);
+      }
+    }
+    .good-to-have {
+      color: rgb(186, 134, 2);
+      .good-to-have-items {
+        display: flex;
+        gap: 4px;
+        margin: 9px;
+        .good-to-have-item {
+          border-radius: 3px;
+          border: 1px solid rgb(207, 131, 39);
+          padding: 3px;
+          font-size: x-small;
+          background-color: rgb(250, 250, 196);
+        }
+      }
+    }
+  }
+}
+.forecast {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 20px 0px;
+  border: 1px solid lightgray;
+  .forecast-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .calender-icon {
+      height: 30px;
+    }
+  }
+  .day-weather {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: rgba(211, 211, 211, 0.307);
+    border-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    img {
+      height: 50px;
+    }
+    .day-weather-details {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      .weather-of-day {
+        font-weight: lighter;
+        color: gray;
+      }
+      .rain-expectation {
+        color: rgb(54, 54, 245);
+      }
+    }
+    .temp {
+      display: flex;
+      gap: 10px;
+      .high-temp {
+        color: rgb(144, 22, 22);
+      }
+      .low-temp {
+        color: rgb(54, 54, 245);
+      }
+    }
+  }
+  .tip {
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 10px;
+    color: blue;
+    font-weight: lighter;
+  }
+  span {
+    font-weight: bold;
+  }
+}
+.mom-tip {
+  background-color: oklch(0.95 0.03 308.18);
+  padding: 20px;
+  border-radius: 10px;
+  color:gray;
+  font-weight: lighter;
+  .mom-tips-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img{
+        width: 20px;
+    }
+  }
+  ul{
+    padding: 10px 20px   ;
+  }
+}
+footer{
+    text-align: center;
+    margin-top: 10px;
+    .love-icon{
+        width: 15px;
+    }
+}
